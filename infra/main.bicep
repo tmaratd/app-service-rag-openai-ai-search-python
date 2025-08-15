@@ -24,6 +24,7 @@ param appServiceName string = 'app-${resourceToken}'
 
 @description('App Service Plan SKU')
 @allowed([
+  'F1'
   'B1'
   'B2'
   'B3'
@@ -34,7 +35,7 @@ param appServiceName string = 'app-${resourceToken}'
   'P2v2'
   'P3v2'
 ])
-param appServicePlanSku string = 'S1'
+param appServicePlanSku string = 'F1'
 
 // Create App Service Plan
 resource appServicePlan 'Microsoft.Web/serverfarms@2022-03-01' = {
@@ -205,12 +206,13 @@ param searchServiceName string = 'srch-${resourceToken}'
 
 @description('Azure AI Search service SKU')
 @allowed([
+  'free'
   'basic'
   'standard'
   'standard2'
   'standard3'
 ])
-param searchServiceSku string = 'standard'
+param searchServiceSku string = 'free'
 
 @description('Search index name')
 param searchIndexName string = 'index-name'

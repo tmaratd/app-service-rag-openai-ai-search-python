@@ -9,7 +9,7 @@
       "value": "eastus2"
     },
     "appServicePlanSku": {
-      "value": "S1"
+      "value": "F1"
     },
     "openAiSkuName": {
       "value": "S0"
@@ -33,7 +33,7 @@
       "value": "2"
     },
     "searchServiceSku": {
-      "value": "standard"
+      "value": "free"
     },
     "searchIndexName": {
       "value": "${SEARCH_INDEX_NAME}"
